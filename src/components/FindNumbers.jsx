@@ -23,7 +23,7 @@ function FindNumbers({}) {
     )
       return;
     const findArr = [one, two, three, four, five];
-    const found = numbers.some((r) => findArr.includes(r));
+    const found = findArr?.every((r) => numbers.includes(r));
 
     if (found) {
       setWin(true);
